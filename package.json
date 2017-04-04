@@ -1,0 +1,20 @@
+{
+  "author": {
+    "name": "Wesley Wigham",
+    "email": "https://github.com/weswigham"
+  },
+  "dependencies": {
+      "@types/react": "^15.0.21"
+  },
+  "description": "TypeScript definitions for react-datasheet",
+  "devDependencies": {},
+  "license": "MIT",
+  "main": "",
+  "name": "@types/react-datasheet",
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/weswigham/AtTypes-react-datasheet.git"
+  },
+  "typeScriptVersion": "2.2",
+  "version": "1.0.0"
+}
