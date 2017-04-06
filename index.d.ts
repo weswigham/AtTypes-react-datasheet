@@ -17,6 +17,7 @@ declare namespace ReactDataSheet {
         valueRenderer: (cell: T) => string | number | void;
         dataRenderer?: (cell: T) => string | number | void;
         onChange?: (cell: T, i: number, j: number, newValue: string) => any;
+        onContextMenu?: (event: MouseEvent, cell: T, i : number, j: number) => any;
     }
 
     export interface CellReference {
@@ -36,7 +37,6 @@ declare namespace ReactDataSheet {
 
 declare class ReactDataSheet<T extends ReactDataSheet.Cell> extends PureComponent<ReactDataSheet.DataSheetProps<T>, ReactDataSheet.DataSheetState> {
     getSelectedCells(data: T[][], start: ReactDataSheet.CellReference, end: ReactDataSheet.CellReference): {cell: T, i: number, j: number};
-
 }
 
 export = ReactDataSheet;
